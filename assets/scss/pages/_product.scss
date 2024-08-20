@@ -1,0 +1,181 @@
+.tab-nav .row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.tab-nav .col{
+    width: 33.333%;
+    text-align: center;
+}
+.tab-nav .col a.active{
+    border-bottom: 8px #AA0601 solid;
+}
+.tab-nav .col a:hover{
+    border-bottom: 8px #FC0 solid;
+}
+.tab-nav .col a{
+    border-right: 0.5px #DDD solid;
+    border-left: 0.5px #DDD solid;
+    border-bottom: 8px transparent solid;
+    margin: 0 auto;
+    padding: 24px;
+    font-size: 32px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    display: block;
+}
+#sunglasses,#other{
+    display: none;
+}
+.pro-banner .row{
+    display: flex;
+}
+.pro-banner img{
+    width: 100%;
+}
+.title{
+    margin:80px  0 32px;
+    text-align: center;
+}
+h2{
+    font-size: 42px;
+    line-height: 63px;
+}
+h3{
+    font-size: 32px;
+    line-height: 48px;
+}
+.card-list.bb{
+    padding:0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+#glasses .card{
+    margin: 0 12px 36px;
+    width: calc(25% - 24px);
+}
+#sunglasses .card{
+    margin: 0 12px 36px;
+    width: calc(33.33333% - 24px);
+}
+.card-head img{
+    width: 100%;
+}
+.card-body .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 4px -4px;
+}
+.card-body .col{
+    margin: 4px;
+}
+.card-body{
+    font-size: 24px;
+    line-height: 36px;
+}
+.card-body .serial{
+    color: #000;
+}
+.card-body .coin{
+    color: #AA0601;
+    font-weight: 600;
+}
+.card-body span{
+    display:inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.aa .card-body span:nth-child(odd){
+    background: #5F3E2D;
+    
+}
+.aa .card-body span:nth-child(even){
+    background: #B75929;
+}
+.pagination ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.pagination ul li a{
+    display: inline-block;
+    color: #000;
+    padding: 12px 16px;
+    border: #0004 1px solid;
+    text-decoration: none;
+}
+.pagination ul li:nth-child(7)>a{
+    border-radius: 0 4px 4px 0;
+}
+.pagination ul li:nth-child(1)>a{
+    border-radius: 4px 0 0 4px;
+}
+@media (max-width:1300px){
+    #glasses .card{
+        margin: 0 12px 36px;
+        width: calc(50% - 24px);
+    }
+    #sunglasses .card{
+        margin: 0 12px 36px;
+        width: calc(50% - 24px);
+    }
+    .tab-nav .col a{
+        padding: 16px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+}
+@media (max-width:767px){
+    .title{
+        margin:40px  0 20px;
+        text-align: center;
+    }
+    #glasses .card{
+        margin: 0 12px 36px;
+        width: calc(100% - 24px);
+    }
+    #sunglasses .card{
+        margin: 0 12px 36px;
+        width: calc(100% - 24px);
+    }
+    #glasses .pro-banner .col:nth-child(1) img{
+        content: url(images/product-header-sm-1.png) !important;
+    }
+    #glasses .pro-banner .col:nth-child(2) img{
+        content: url(images/product-header-sm-2.png) !important;
+    }
+    #sunglasses .pro-banner .col:nth-child(1) img{
+        content: url(images/product-header-sm-3.png) !important;
+    }
+    #sunglasses .pro-banner .col:nth-child(2) img{
+        content: url(./../aimages/product-header-sm-4.png) !important;
+    }
+    .tab-nav .col a{
+        padding: 16px 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h2,h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .pagination ul li a{
+        display: inline-block;
+        color: #000;
+        padding: 10px 12px;
+        border: #0004 1px solid;
+        text-decoration: none;
+    }
+    .tab-nav{
+        background: #FFF;
+        position: sticky !important;
+        top: 0px;
+    }
+
+}

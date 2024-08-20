@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <Script>
+        function openClass(evt, className) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(className).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+        var mybtn = document.getElementsByClassName("testbtn")[0];
+        mybtn.click();
+    </Script>
+</head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid tab-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col"><a class="tablink active" href="javascript:;"
+                        onclick="openClass(event, 'glasses')">OPTICAL</a></div>
+                <div class="col"><a class="tablink" href="javascript:;"
+                        onclick="openClass(event, 'sunglasses')">SUNGLASSES</a></div>
+                <div class="col"><a class="tablink" href="javascript:;"
+                        onclick="openClass(event, 'other')">FUNCTIONAL</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid tab" id="glasses">
+        <div class="pro-banner">
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/images/product-header-1.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./../assets/images/product-header-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h2>Celluloid Combi</h2>
+                <h3>賽璐珞鈦金屬混合鏡框</h3>
+            </div>
+            <div class="card-list bb">
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-1.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-3.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-4.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-5.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-6.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-1.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-3.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-4.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-5.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./../assets/images/product-6.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col serial">BJ41600S</div>
+                            <div class="col coin">NTD3,490</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li><a href="#">上一頁</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a style="color: #FFF;background: #000;" href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">下一頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid tab" id="sunglasses">
+            <div class="pro-banner">
+                <div class="row">
+                    <div class="col">
+                        <img src="./../assets/images/product-header-3.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./../assets/images/product-header-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">
+                    <h2>2020 NEW COLLECTION</h2>
+                    <h3>賽璐珞鈦金屬混合鏡框</h3>
+                </div>
+                <div class="card-list bb">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="./../assets/images/product-7.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col serial">BJ41600S</div>
+                                <div class="col coin">NTD3,490</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="./../assets/images/product-8.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col serial">BJ41600S</div>
+                                <div class="col coin">NTD3,490</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="./../assets/images/product-9.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col serial">BJ41600S</div>
+                                <div class="col coin">NTD3,490</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="./../assets/images/product-10.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col serial">BJ41600S</div>
+                                <div class="col coin">NTD3,490</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="./../assets/images/product-11.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col serial">BJ41600S</div>
+                                <div class="col coin">NTD3,490</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="./../assets/images/product-12.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col serial">BJ41600S</div>
+                                <div class="col coin">NTD3,490</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">上一頁</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a style="color: #FFF;background: #000;" href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">下一頁</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid tab" id="other">
+
+        </div>
+    
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
